@@ -1,46 +1,188 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: linear-gradient(90deg, #B2F03E , #F0EBEB 200%)
-    
-}
-  
-header .logo{
-    background: rosybrown;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo img{
-    margin-left: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-.logo span{
-    font-size: 30px;
-    font-weight: bold;
-    margin-right: auto;
-    color: #333;
+body {
+  background: linear-gradient(180deg, #f3f0ff 0%, #ffffff 100%);
+  color: #1e1e1e;
 }
-nav{
-    margin-right: auto;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-nav a{
-    text-decoration: none;
-    margin: 15px;
-    font-size: 20px;
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 700;
 }
-.button{
-    margin-right: auto;
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
 }
-.login, .signup{
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(162, 255, 0, 0.575);
+
+.navbar a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
 }
+
+.buttons .login,
+.buttons .signup {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login {
+  background: transparent;
+}
+
+.signup {
+  background: #6a5af9;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs .active {
+  color: #6a5af9;
+  border-bottom: 2px solid #6a5af9;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  gap: 20px;
+}
+
+.search-box .field {
+  flex: 1;
+}
+
+.search-box label {
+  font-size: 12px;
+  color: #999;
+}
+
+.search-box p {
+  font-weight: 600;
+  color: #333;
+}
+
+.browse-btn {
+  background: #6a5af9;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stats h3 {
+  color: #6a5af9;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card {
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 250px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #6a5af9;
+}
+
+.footer {
+    display: flex;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  background: black;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 250px;
+}
+
+.footer p, h2{
+    color: #f3f0ff;
+}
+
